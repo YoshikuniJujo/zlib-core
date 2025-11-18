@@ -1,5 +1,5 @@
 name:                zlib-core
-version:             0.1.0.0
+version:             0.1.0.1
 github:              "YoshikuniJujo/zlib-core"
 license:             BSD-3-Clause
 author:              "Yoshikuni Jujo"
@@ -42,6 +42,8 @@ ghc-options:
 
 library:
   source-dirs: src
+  pkg-config-dependencies:
+    - zlib
 
 tests:
   zlib-core-test:
